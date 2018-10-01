@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <form>
+  Make:<br>
+  <input id="mm"type="text" name="make" value=""><br>
+  Model:<br>
+  <input type="text"name="model"value=""><br>
+  Plate:<br>
+  <input type="text" name="plate"value=""><br>
+  State:<br>
+  <input type="text" name="state"value=""><br>
+  <input type=button value="click here">
+  </form>
+
+
+
+      <script>
+        var url ="https://data.cityofchicago.org/resource/rp42-fxjt.json";
+
+
+        var url = endpoint + "?make=" + $("#make").val();
+
+        url += "&results=" + $("#results").val();
+
+
+        $.ajax({
+              url: url,
+              type: "GET",
+
+      }
+    </script>
+
+
+
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA23qcXuGK77p1Smzt7qKsJsMF61TMvDaY">
+    </script>
+  </body>
+</html>
